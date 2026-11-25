@@ -3,7 +3,7 @@
 set -euo pipefail
 
 SKILL_NAME="chinese-literature-review-writing"
-REPOSITORY="tanqi87/chinese-literature-review-writing-skill"
+REPOSITORY="Eternity-487/chinese-literature-review-writing-skill"
 SCRIPT_PATH="${BASH_SOURCE[0]:-}"
 SCRIPT_DIR=""
 DESTINATION_ROOT="${CODEX_HOME:-$HOME/.codex}/skills"
@@ -101,6 +101,8 @@ REQUIRED_FILES=(
   "agents/openai.yaml"
   "references/retrieval-rules.md"
   "references/writing-rules.md"
+  "references/topic-diagnosis.md"
+  "references/citation-audit.md"
 )
 
 for REQUIRED_FILE in "${REQUIRED_FILES[@]}"; do

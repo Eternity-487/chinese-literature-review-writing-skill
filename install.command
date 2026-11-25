@@ -12,7 +12,7 @@ if [[ -f "$INSTALLER" ]]; then
   /bin/bash "$INSTALLER" "$@"
 else
   /usr/bin/curl -fsSL \
-    "https://raw.githubusercontent.com/tanqi87/chinese-literature-review-writing-skill/main/install.sh" \
+    "https://raw.githubusercontent.com/Eternity-487/chinese-literature-review-writing-skill/main/install.sh" \
     | /bin/bash -s -- "$@"
 fi
 
