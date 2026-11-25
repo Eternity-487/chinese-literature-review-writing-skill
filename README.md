@@ -11,7 +11,7 @@
 ## 它能做什么
 
 - 根据选题拆分综述范围、核心概念和检索主题；
-- 检索时以近 3—5 年国内外核心期刊或学科高质量期刊为主；
+- 完整综述以近 3—5 年高质量研究为主，选题诊断和近期研究动态优先查近 2—3 年；
 - 相关硕士论文优先选择对应学科、专业实力靠前院校的成果；
 - 核验核心目录、数据库收录、期刊分区和院校学科排名的版本年份；
 - 从 PDF、Word、Excel、CSV、文献表或阅读笔记中整理证据；
@@ -53,12 +53,12 @@
 点击代码框右上角的复制按钮，再把完整内容发送给 Codex：
 
 ```text
-请使用 $skill-installer 安装“文献综述救星”Codex 技能：https://github.com/tanqi87/chinese-literature-review-writing-skill/tree/main/chinese-literature-review-writing
+请使用 $skill-installer 安装“文献综述救星”Codex 技能：https://github.com/Eternity-487/chinese-literature-review-writing-skill/tree/main/chinese-literature-review-writing
 ```
 
 ### 方法二：Mac 双击安装
 
-1. [下载 Mac 一键安装包](https://raw.githubusercontent.com/tanqi87/chinese-literature-review-writing-skill/main/chinese-literature-review-writing-installer.zip) 并解压；
+1. [下载 Mac 一键安装包](https://raw.githubusercontent.com/Eternity-487/chinese-literature-review-writing-skill/main/chinese-literature-review-writing-installer.zip) 并解压；
 2. 双击文件夹中的 `install.command`；
 3. 安装完成后，重新打开 Codex 或开始一个新对话。
 
@@ -71,7 +71,7 @@
 点击代码框右上角的复制按钮，将这一整行粘贴到终端：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/tanqi87/chinese-literature-review-writing-skill/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Eternity-487/chinese-literature-review-writing-skill/main/install.sh | bash
 ```
 
 如果希望先检查脚本内容，可先打开仓库中的 `install.sh`，确认后再运行。
@@ -97,11 +97,26 @@ chinese-literature-review-writing-skill/
     ├── agents/
     │   └── openai.yaml
     └── references/
+        ├── citation-audit.md
+        ├── topic-diagnosis.md
         ├── retrieval-rules.md
         └── writing-rules.md
 ```
 
 ## 使用示例
+
+```text
+使用 $chinese-literature-review-writing 判断这个选题还能不能写。
+找出最接近的研究，对照我的研究问题、对象、材料和方法，
+说明建议保留、收窄还是改题，以及我需要先确认哪些资料。
+```
+
+```text
+使用 $chinese-literature-review-writing 逐条核查这段综述的引文。
+标明哪篇原文的哪一处支持哪句话，并给出改写或补证建议。
+```
+
+查看[选题诊断演示](chinese-literature-review-writing/references/topic-diagnosis.md)和[引文核查演示](chinese-literature-review-writing/references/citation-audit.md)。
 
 ```text
 使用 $chinese-literature-review-writing 检索并整理与选题相关的文献。
